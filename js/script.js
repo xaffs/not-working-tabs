@@ -21,8 +21,8 @@ anim.addEventListener('click',function() {
     }
 })
 
-const tabsBtn = document.querySelectorAll('#btn');
-const tabsItem = document.querySelectorAll('#tabs_select');
+const tabsBtn = document.querySelectorAll('.tabs__item');
+const tabsItem = document.querySelectorAll('.tabs__block');
 
 tabsBtn.forEach(function(item){
     item.addEventListener("click" , function() {
@@ -36,11 +36,11 @@ tabsBtn.forEach(function(item){
             });
     
             tabsItem.forEach(function(item){
-                item.classList.remove('visibility');
+                item.classList.remove('active');
             });
     
             currentBtn.classList.add('active');
-            currentTab.classList.add('visibility');
+            currentTab.classList.add('active');
         }
  
     });
